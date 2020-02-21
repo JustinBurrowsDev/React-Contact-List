@@ -1,32 +1,16 @@
-import React from "react"
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
-import Home from "./Home"
-import ContactDetails from "./ContactDetails"
+import React, { useEffect, useState } from "react"
+import { BrowserRouter as Router, Route } from "react-router-dom"
+
+import ListView from "./ListView"
+import SingleView from "./SingleView"
 
 export default function() {
   return (
     // everthing inside the router tags is managed by the router component
     <Router>
       <div>
-        <li>
-          <Link exact to="/">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="/ContactDetails">contact details</Link>
-        </li>
-        <li>
-          <Link to="/ContactDetails/1">contact 1</Link>
-        </li>
-        <li>
-          <Link to="/ContactDetails/2">contact 2</Link>
-        </li>
-        <li>
-          <Link to="/ContactDetails/3">contact 3</Link>
-        </li>
-        <Route exact path="/" component={Home} />
-        <Route path="/ContactDetails/:id" component={ContactDetails} />
+        <Route exact path="/" component={ListView} />
+        <Route path="/:id" component={SingleView} />
       </div>
     </Router>
   )

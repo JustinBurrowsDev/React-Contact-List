@@ -1,0 +1,37 @@
+h1 {
+  background: #3258a8;
+  border-bottom: 2px solid #3242a8);
+  padding: 15px 10px;
+  margin: 0;
+  color: white;
+  font-family: 'Roboto';
+}
+
+
+.userLink {
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+}
+
+.userLink li {
+  border-bottom: 1px solid #ccc;
+}
+
+.userLink li a {
+  display: flex;
+  margin: 5px 0;
+  font-family: 'Roboto';
+  color: black;
+  text-decoration: none;
+
+}
+
+.userLink li a img {
+  border-radius: 50%
+}
+
+.userLink li a p {
+  padding-left: 10px;
+}
+

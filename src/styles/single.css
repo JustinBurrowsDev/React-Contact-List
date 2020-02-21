@@ -1,0 +1,40 @@
+header {
+  background: #3242a8;
+  text-align: center;
+  postion: relative;
+}
+
+header button {
+  display: flex;
+  postion: absolute;
+  top: 10px;
+  left: 10px;
+  background: transparent;
+  border: 0;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+header img {
+  margin: 5px 0;
+  border-radius: 50%;
+  width: 7%;
+  height: 7%;
+}
+
+.single li {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.single p {
+  padding-left: 10px;
+}
+
+.single svg {
+  margin-right: 15px;
+}
